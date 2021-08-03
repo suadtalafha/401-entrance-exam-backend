@@ -10,7 +10,7 @@ server.use(express.json());
 
 const PORT=process.env.PORT;
 
-mongoose.connect('mongodb://localhost:27017/Colors', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://Suad-Talafha:suad123456@cluster0-shard-00-00.gakox.mongodb.net:27017,cluster0-shard-00-01.gakox.mongodb.net:27017,cluster0-shard-00-02.gakox.mongodb.net:27017/Colors?ssl=true&replicaSet=atlas-119grk-shard-0&authSource=admin&retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 const ColorsSchema = new mongoose.Schema({
